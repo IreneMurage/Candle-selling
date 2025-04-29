@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(100, 160, 160);
+}
+.main{
+    width: 100%;
+    background-color: yellowgreen ;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    height: 70px;
+    float: left;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    padding-left: 15px;
+    padding-top: 10px;
+    float: left;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li, button{
+    margin-left: 60px;
+    margin-top: 20px;
+    font-size: 17px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
