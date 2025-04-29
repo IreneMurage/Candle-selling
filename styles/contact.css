@@ -67,3 +67,7 @@ button:hover{
     margin-bottom: 10px;
     color: #555;
 }
+.contact-info i{
+    color: #4caf50;
+    margin-right: 10px;
+}
