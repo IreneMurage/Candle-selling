@@ -1,0 +1,42 @@
+// This array will store the cart items
+let cart = [];
+
+function addToCart(event) {
+    // Get the relevant product card
+    const productElement = event.target.closest('.scented');
+    const productName = productElement.querySelector('img').alt;
+    const price = parseFloat(productElement.querySelector('label').textContent.replace('$', ''));
+    const quantity = parseInt(productElement.querySelector('input[type="number"]').value);
+
+    // Check if the product is already in the cart
+    let productInCart = cart.find(item => item.name === productName);
+
+    if (productInCart) {
+        // Update quantity
+        productInCart.quantity += quantity;
+    } else {
+        // Add new product to cart
+        cart.push({
+            name: productName,
+            price: price,
+            quantity: quantity
+        });
+    }
+
+    updateCart();
+}
+
+function updateCart() {
+    console.log('Cart:', cart);
+    alert("Product added to cart!");
+}
+
+// Attach event listeners after DOM is loaded
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".button");
+    buttons.forEach(button => {
+        button.addEventListener("click", addToCart);
+    });
+});
+
+
