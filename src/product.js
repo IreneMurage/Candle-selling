@@ -23,7 +23,7 @@ function addToCart(event) {
 }
 
 function updateCart() {
-    console.log('Cart:', cart);
+    console.log("Cart contents:", cart)
     alert("Product added to cart!");
 }
 
