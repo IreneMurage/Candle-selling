@@ -20,7 +20,7 @@ Cozy Wicks is an online candle shop where customers can browse and purchase a va
 
 ## Live Site
 The site is live and can be viewed on:
-- [GitHub Pages](https://github.com/IreneMurage/Candle-selling.git) 
+- [GitHub Pages](https://irenemurage.github.io/Candle-selling/) 
 - [Vercel](https://candle-selling.vercel.app/) 
 
 ## Installation Instructions
